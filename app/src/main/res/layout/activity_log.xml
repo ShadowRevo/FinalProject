@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05A058"
+    tools:context=".LogActivity">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="top|center_horizontal" />
+
+    <EditText
+        android:id="@+id/EmailEdit"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_bg"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <EditText
+        android:id="@+id/PasswordEdit"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_bg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <Button
+        android:id="@+id/LogInButton"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="310dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#FFFFFF"
+        android:text="Log In"
+        android:textColor="#05A058"
+        android:textStyle="bold"
+        android:elevation="6dp"
+        android:radius="25dp" />
+
+    <TextView
+        android:id="@+id/goToSignupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="380dp"
+        android:text="Don’t have an account? Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/ExitButton"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#E53935"
+        android:text="Exit"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:elevation="6dp"
+        android:radius="25dp" />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

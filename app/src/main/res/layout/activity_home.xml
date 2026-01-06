@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05A058"
+    android:padding="16dp">
+
+    <!-- Profile Circle (Top Right) -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_white"
+        android:elevation="8dp"
+        android:padding="3dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/homeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Travel Guide"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Search for a city..."
+            android:padding="15dp"
+            android:textColorHint="#DDDDDD"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Nearby Button -->
+        <Button
+            android:id="@+id/nearbyButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Nearby Places"
+            android:textColor="#05A058"
+            android:backgroundTint="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="6dp"
+            android:radius="25dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Cities Recycler -->
+        <TextView
+            android:id="@+id/citiesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cities"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/citiesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"/>
+
+    </LinearLayout>
+</FrameLayout>

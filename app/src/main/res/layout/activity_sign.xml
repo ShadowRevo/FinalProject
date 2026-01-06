@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05A058">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="top|center_horizontal" />
+
+    <EditText
+        android:id="@+id/SignupEmail"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_bg"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <EditText
+        android:id="@+id/SignupPassword"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_bg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <EditText
+        android:id="@+id/SignupConfirmPassword"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="290dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_bg"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <Button
+        android:id="@+id/CreateAccountButton"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="360dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#FFFFFF"
+        android:text="Sign Up"
+        android:textColor="#05A058"
+        android:textStyle="bold"
+        android:elevation="6dp"
+        android:radius="25dp" />
+
+    <TextView
+        android:id="@+id/backToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Log in"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="430dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <ProgressBar
+        android:id="@+id/loadingBarSignup"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>
